@@ -6,6 +6,10 @@ $(function() {
 var initPage = {
   // 초기 실행 함수
   init: function() {
+
+    // header, footer load
+    this.header();
+    this.footer();
     // 가상 스크롤바, modal popup, 검색
     var script = '<script type="text/javascript" src="/xe/design/assets/js/vendors/jquery.min.js"></script>';
     script += '<script type="text/javascript" src="/xe/design/assets/js/vendors/aos.js"></script>';
@@ -15,10 +19,6 @@ var initPage = {
     script += '<script type="text/javascript" src="/xe/design/assets/js/sub.js"></script>';
 
     $('head').append(script);
-
-    // header, footer load
-    this.header();
-    this.footer();
   },
 
   // header load

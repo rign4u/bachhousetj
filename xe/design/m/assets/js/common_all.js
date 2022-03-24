@@ -10,17 +10,23 @@ var initPage = {
     // header, footer load
     this.header();
     this.footer();
-    // 가상 스크롤바, modal popup, 검색
-    var script = '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/jquery.min.js"></script>';
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/aos.js"></script>';
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/swiper.min.js"></script>';
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/bodyScrollLock.min.js"></script>';
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/jquery.rwdImageMaps.min.js"></script>';
 
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/common.js"></script>';
-    script += '<script type="text/javascript" src="/xe/design/m/assets/js/main.js"></script>';
 
-    $('head').append(script);
+    var time = setTimeout(function() {
+
+      // 가상 스크롤바, modal popup, 검색
+      var script = '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/jquery.min.js"></script>';
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/aos.js"></script>';
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/swiper.min.js"></script>';
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/bodyScrollLock.min.js"></script>';
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/vendors/jquery.rwdImageMaps.min.js"></script>';
+
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/common.js"></script>';
+      script += '<script type="text/javascript" src="/xe/design/m/assets/js/main.js"></script>';
+
+      $('head').append(script);
+    }, 300);
+
   },
 
   // header load
